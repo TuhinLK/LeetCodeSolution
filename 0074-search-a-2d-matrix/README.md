@@ -31,4 +31,13 @@
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 	<li><code>-10<sup>4</sup> &lt;= matrix[i][j], target &lt;= 10<sup>4</sup></code></li>
 </ul>
+<p>&nbsp;</p>
+<p><strong>Solution:</strong></p>
+<ul>
+	<li>Start at the top right corner of the matrix.</li>
+	<li>If the current element is equal to the target value, return true.</li>
+	<li>If the current element is less than the target value, move down to the next row.</li>
+	<li>If the current element is greater than the target value, move left to the previous column.</li>
+	<li>Repeat steps 2-4 until the target value is found or the boundaries of the matrix are exceeded.</li>
+</ul>
 </div>
